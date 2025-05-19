@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go TRAVELS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-go">Go</div>
+                    <div class="logo-travels">TRAVELS<img src="img/plane.png" alt="Літак"></div>
+                </div>
+                <div class="search-social">
+                    <div class="search-box">
+                        <input type="text" placeholder="Пошук...">
+                        <img src="img/search.png" alt="Пошук">
+                    </div>
+                    <div class="social-icons">
+                        <img src="img/facebook.png" alt="Facebook">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-container">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="country.html">Країни</a></li>
+                        <li><a href="hottours.html">Гарячі тури</a></li>
+                        <li><a href="aboutus.html">Про нас</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-text">Подорожуйте разом з go travels</div>
+    <div class="slideshow-container">
+        <div class="slide" style="background-image: url('https://faktypro.com.ua/uploads/img/27-cikavih-faktiv-pro-japoniju.jpg');">
+            <div class="slide-text">Японія</div>
+        </div>
+        <div class="slide" style="background-image: url('https://travel-tours.com.ua/wp-content/uploads/2016/03/24.jpg');">
+            <div class="slide-text">Швейцарія</div>
+        </div>
+        <div class="slide" style="background-image: url('https://pohcdn.com/sites/default/files/styles/big_gallery_image/public/text_gallery/Egypt.jpg');">
+            <div class="slide-text">Єгипет</div>
+        </div>
+        <div class="slide" style="background-image: url('https://piligrim.ua/wp-content/uploads/2021/05/Greec.jpg?1651424945594');">
+            <div class="slide-text">Греція</div>
+        </div>
+        <div class="slide" style="background-image: url('https://any-tour.com.ua/wp-content/uploads/2023/06/tour-bali-main.jpg');">
+            <div class="slide-text">Балі</div>
+        </div>
+        <div class="slide" style="background-image: url('https://ysa.kiev.ua/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2024/10/rym-2-1024x576.jpg.webp');">
+            <div class="slide-text">Італія</div>
+        </div>
+       
+    </div>
+  
+  
+    <div class="travel-request">
+        <h2>Запит на підбір подорожі</h2>
+        <p style="text-align: center; font-family: 'Montserrat', sans-serif; margin-bottom: 20px;">Надішліть нам Ваш номер телефону і наш менеджер зв'яжеться з Вами</p>
+        
+        <form class="request-form" id="travelForm">
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <td>
+                        <input type="text" id="name" name="name" required>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th>Номер телефону</th>
+                    <td>
+                        
+                        <input type="tel" id="phone" name="phone" placeholder="+38(0__)-___-__-__">
+
+               
+                    </td>
+                </tr>
+            </table>
+           
+            <button type="submit" class="submit-btn">Відправити запит</button>
+            
+        </form>
+    </div>
+    
+    <div class="hot-tours-section">
+        <div class="hot-tours-header">
+            <h2>Гарячі тури</h2>
+            <img src="img/fire.png" alt="Гарячі пропозиції" class="fire-icon">
+            <a href="hottours.html" class="details-link">
+                Більше
+                <img src="img/arrow.png" alt="Деталі" class="arrow-icon">
+            </a>
+        </div>
+        <div class="hot-tours-grid">
+            <div class="tour-item">
+                <img src="https://img.poehalisnami.ua/static/hotels/egipet/sharm-el-shejjkh/h134292/orig/booking134292_1134292_638694217874035807.jpg" alt="Єгипет">
+                <div class="tour-overlay">Єгипет</div>
+                <div class="price-overlay">Акційна ціна 32 500₴!</div>
+            </div>
+            <div class="tour-item">
+                <img src="https://img.poehalisnami.ua/static/hotels/ispaniya/alkudia/h12532/orig/booking12532_1.jpg" alt="Іспанія">
+                <div class="tour-overlay">Іспанія</div>
+                <div class="price-overlay">Акційна ціна 30 000₴!</div>
+            </div>
+            <div class="tour-item">
+                <img src="https://img.poehalisnami.ua/static/hotels/greciya/o-krit/h156317/orig/booking156317_2156317_638694340594376038.jpg" alt="Греція">
+                <div class="tour-overlay">Греція</div>
+                <div class="price-overlay">Акційна ціна 50 000₴!</div>
+            </div>
+            <div class="tour-item">
+                <img src="https://img.poehalisnami.ua/static/hotels/oae/ras-el-khajjma/h101849/orig/booking101849_13101849_638810384676607585.jpg" alt="ОАЕ">
+                <div class="tour-overlay">ОАЕ</div>
+                <div class="price-overlay">Акційна ціна 60 000₴!</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-go">Go</div>
+                        <div class="logo-travels">TRAVELS<img src="img/plane.png" alt="Літак"></div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h3>Навігація</h3>
+                        <ul>
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="country.html">Країни</a></li>
+                            <li><a href="#">Гарячі тури</a></li>
+                            <li><a href="#">Про нас</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Контакти</h3>
+                        <ul>
+                            <li><a href="tel:+380632589754"><img src="img/phone-icon.png" alt="Телефон"> +380 63 258 97 54</a></li>
+                            <li><a href="mailto:info@gotravels.com"><img src="img/email-icon.png" alt="Email"> info@gotravels.com</a></li>
+                            <li><a href="#"><img src="img/location-icon.png" alt="Адреса"> м. Київ, вул. Турівська, 15</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Графік роботи</h3>
+                        <ul>
+                            <li>Пн-Пт: 09:00 - 19:00</li>
+                            <li>Сб: 10:00 - 16:00</li>
+                            <li>Нд: вихідний</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Go TRAVELS. Всі права захищені | <span class="author-link">Антоненко Анна</span></p>
+            </div>
+        </div>
+    </footer>
+    <div id="authorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/myphoto.jpg" alt="Антоненко Анна" class="author-photo">
+            <div class="author-name">АНТОНЕНКО АННА</div>
+            <div class="author-info">
+                17 років, м.Черкаси<br>
+                Студентка Черкаського державного бізнес коледжу,<br>
+                спеціальність "Інженерія програмного забезпечення".<br>
+                Великий інтерес до сфери ІТ з планами побудувати кар'єру в цій галузі.<br>
+                Має безліч захоплень і завжди відкриває для себе щось нове.<br>
+                Активна, постійно прагне до саморозвитку та нових досягнень.
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go TRAVELS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-go">Go</div>
+                        <div class="logo-travels">TRAVELS<img src="img/plane.png" alt="Літак"></div>
+                    </a>
+                </div>
+                <div class="search-social">
+                    <div class="search-box">
+                        <input type="text" placeholder="Пошук...">
+                        <img src="img/search.png" alt="Пошук">
+                    </div>
+                    <div class="social-icons">
+                        <img src="img/facebook.png" alt="Facebook">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-container">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Країни</a></li>
+                        <li><a href="hottours.html">Гарячі тури</a></li>
+                        <li><a href="aboutus.html">Про нас</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="countries-main">
+        <div class="container">
+            <h1 class="countries-title">Країни</h1>
+            
+          <div class="countries-grid">
+        <!-- Країна 1 -->
+        <div class="country-card" data-country="italy" data-city="rome">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/bb/4b/2c/bb4b2cc1c6714f3fa3403c7f71136eea.jpg" alt="Італія">
+                <div class="country-name">Італія</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 12</p>
+                        <p>Ціна від: 850$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 2 -->
+        <div class="country-card" data-country="japan" data-city="tokyo">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/b4/43/1c/b4431ce75fc33a3be414801cedce3f0a.jpg" alt="Японія">
+                <div class="country-name">Японія</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 3</p>
+                        <p>Ціна від: 920$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 3 -->
+        <div class="country-card" data-country="greece" data-city="athens">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/48/2d/37/482d37808eae79edb1ddb99722f46e88.jpg" alt="Греція">
+                <div class="country-name">Греція</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 20</p>
+                        <p>Ціна від: 750$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 4 -->
+        <div class="country-card" data-country="egypt" data-city="cairo">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/e0/8e/9f/e08e9f5ad5ba79df900525822fe328d8.jpg" alt="Єгипет">
+                <div class="country-name">Єгипет</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 15</p>
+                        <p>Ціна від: 680$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 5 -->
+        <div class="country-card" data-country="switzerland" data-city="zurich">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/59/68/4b/59684b0c0c85f7da6f4a4b6d075ec453.jpg" alt="Швейцарія">
+                <div class="country-name">Швейцарія</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 8</p>
+                        <p>Ціна від: 790$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 6 -->
+        <div class="country-card" data-country="turkey" data-city="istanbul">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/32/3b/53/323b532a8301ab80ebfd5026a0e723fc.jpg" alt="Туреччина">
+                <div class="country-name">Туреччина</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 20</p>
+                        <p>Ціна від: 650$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 7 -->
+        <div class="country-card" data-country="indonesia" data-city="bali">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/3f/a7/ab/3fa7abcf588b85630bdc4b70c8fedda4.jpg" alt="Балі">
+                <div class="country-name">Балі</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 17</p>
+                        <p>Ціна від: 900$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 8 -->
+        <div class="country-card" data-country="ukraine" data-city="kyiv">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/dd/b0/1d/ddb01ddeb0f914bd879512161a0ca875.jpg" alt="Україна">
+                <div class="country-name">Україна</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 21</p>
+                        <p>Ціна від: 400$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 9 -->
+        <div class="country-card" data-country="maldives" data-city="male">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/95/3b/dc/953bdc7540fa82c7d7f6c29d2b53f67a.jpg" alt="Мальдіви">
+                <div class="country-name">Мальдіви</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 7</p>
+                        <p>Ціна від: 1200$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 10 -->
+        <div class="country-card" data-country="thailand" data-city="bangkok">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/e8/cf/74/e8cf74cbeaee9036008457f0c2d6c61b.jpg" alt="Таїланд">
+                <div class="country-name">Таїланд</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 14</p>
+                        <p>Ціна від: 950$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Країна 11 -->
+        <div class="country-card" data-country="uae" data-city="dubai">
+            <div class="country-image">
+                <img src="https://i.pinimg.com/736x/c0/ba/0d/c0ba0d3ade2ad20ee66e92285f9a0a24.jpg" alt="ОАЕ">
+                <div class="country-name">ОАЕ</div>
+                <div class="country-overlay">
+                    <div class="overlay-content">
+                        <p>Кількість пропозицій: 10</p>
+                        <p>Ціна від: 700$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo">
+                            <div class="logo-go">Go</div>
+                            <div class="logo-travels">TRAVELS<img src="img/plane.png" alt="Літак"></div>
+                        </div>
+                    </a>
+                    
+                    <div class="footer-social">
+                        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h3>Навігація</h3>
+                        <ul>
+                            <li><a href="index.html">Головна</a></li>
+                            <li><a href="#">Країни</a></li>
+                            <li><a href="#">Гарячі тури</a></li>
+                            <li><a href="#">Про нас</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Контакти</h3>
+                        <ul>
+                            <li><a href="tel:+380632589754"><img src="img/phone-icon.png" alt="Телефон"> +380 63 258 97 54</a></li>
+                            <li><a href="mailto:info@gotravels.com"><img src="img/email-icon.png" alt="Email"> info@gotravels.com</a></li>
+                            <li><a href="#"><img src="img/location-icon.png" alt="Адреса"> м. Київ, вул. Турівська, 15</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Графік роботи</h3>
+                        <ul>
+                            <li>Пн-Пт: 09:00 - 19:00</li>
+                            <li>Сб: 10:00 - 16:00</li>
+                            <li>Нд: вихідний</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Go TRAVELS. Всі права захищені | <span class="author-link">Антоненко Анна</span></p>
+            </div>
+        </div>
+    </footer>
+    <div id="authorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/myphoto.jpg" alt="Антоненко Анна" class="author-photo">
+            <div class="author-name">АНТОНЕНКО АННА</div>
+            <div class="author-info">
+                17 років, м.Черкаси<br>
+                Студентка Черкаського державного бізнес коледжу,<br>
+                спеціальність "Інженерія програмного забезпечення".<br>
+                Великий інтерес до сфери ІТ з планами побудувати кар'єру в цій галузі.<br>
+                Має безліч захоплень і завжди відкриває для себе щось нове.<br>
+                Активна, постійно прагне до саморозвитку та нових досягнень.
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
