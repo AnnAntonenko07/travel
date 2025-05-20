@@ -1053,7 +1053,6 @@ body {
     align-self: flex-end;
     height: 45px;
     margin-left: 25px;
-    margin-bottom:2px;
 }
 
 .search-btn:hover {
@@ -1171,4 +1170,38 @@ body {
     .page-title {
         font-size: 36px;
     }
+}
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #177198;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.back-to-top img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #135a7a;
+    transform: translateY(-3px);
 }
