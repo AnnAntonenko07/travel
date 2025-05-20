@@ -36,10 +36,14 @@ $(document).ready(function () {
     }
     
     function validateName() {
-        const name = $('input[name="name"]').val().trim();
+        const name = $('#name').val().trim();
         const regex = /^[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ'-]+$/u;
-        if (!regex.test(name)) {
-            $('#name-error').text("Імʼя може містити лише літери, апостроф і дефіс.").show();
+        
+        if (name.length < 2) {
+            $('#name-error').text("Імʼя повинно містити як мінімум 2 літери").show();
+            return false;
+        } else if (!regex.test(name)) {
+            $('#name-error').text("Імʼя може містити лише літери, апостроф і дефіс").show();
             return false;
         } else {
             $('#name-error').hide();
@@ -47,28 +51,36 @@ $(document).ready(function () {
         }
     }
     
-    function validatePhone() {
-        const phone = $('input[name="phone"]').val().trim();
-        const regex = /^\+380\d{9}$/;
-    
-        if (!regex.test(phone)) {
-            $('#phone-error').text('Номер має бути у форматі +380XXXXXXXXX (9 цифр). Без літер чи інших символів.').show();
+    function validateEmail() {
+        const email = $('#email').val().trim();
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const forbiddenDomains = ['mail.ru', '.ru', '@.ru'];
+        
+        // Перевірка на заборонені домени
+        const domain = email.split('@')[1];
+        if (forbiddenDomains.some(forbidden => domain.includes(forbidden))) {
+            $('#email-error').text('Цей домен email не підтримується').show();
+            return false;
+        }
+        
+        if (!regex.test(email)) {
+            $('#email-error').text('Будь ласка, введіть коректний email').show();
             return false;
         } else {
-            $('#phone-error').hide();
+            $('#email-error').hide();
             return true;
         }
     }
     
-    $('input[name="name"]').on('input', validateName);
-    $('input[name="phone"]').on('input', validatePhone);
+    $('#name').on('input', validateName);
+    $('#email').on('input', validateEmail);
     
-    $('form').on('submit', function (e) {
+    $('#travelForm').on('submit', function (e) {
         e.preventDefault();
         const isNameValid = validateName();
-        const isPhoneValid = validatePhone();
+        const isEmailValid = validateEmail();
     
-        if (isNameValid && isPhoneValid) {
+        if (isNameValid && isEmailValid) {
             $('#success-message').text('Запит успішно надіслано!').show();
             setTimeout(function() {
                 $('#success-message').fadeOut();
@@ -484,10 +496,16 @@ const API_KEY = '5ea7ed48a34f7a84a42e140f9a3379cb';
         $('.close').click(function() {
             $('#authorModal').hide();
         });
-
-        $(window).click(function(e) {
-            if (e.target.id === 'authorModal') {
-                $('#authorModal').hide();
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+                $('#back-to-top').addClass('active');
+            } else {
+                $('#back-to-top').removeClass('active');
             }
         });
-    
+        
+        $('#back-to-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 300);
+            return false;
+        });
+        
