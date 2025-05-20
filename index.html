@@ -67,7 +67,7 @@
   
     <div class="travel-request">
         <h2>Запит на підбір подорожі</h2>
-        <p style="text-align: center; font-family: 'Montserrat', sans-serif; margin-bottom: 20px;">Надішліть нам Ваш номер телефону і наш менеджер зв'яжеться з Вами</p>
+        <p style="text-align: center; font-family: 'Montserrat', sans-serif; margin-bottom: 20px;">Надішліть нам Ваш email і наш менеджер зв'яжеться з Вами</p>
         
         <form class="request-form" id="travelForm">
             <table>
@@ -75,25 +75,22 @@
                     <th>Ім'я</th>
                     <td>
                         <input type="text" id="name" name="name" required>
-                        
+                        <div id="name-error" style="color:red; font-size:12px; display:none; font-family:'Montserrat', sans-serif;"></div>
                     </td>
                 </tr>
                 <tr>
-                    <th>Номер телефону</th>
+                    <th>Email</th>
                     <td>
-                        
-                        <input type="tel" id="phone" name="phone" placeholder="+38(0__)-___-__-__">
-
-               
+                        <input type="email" id="email" name="email" required>
+                        <div id="email-error" style="color:red; font-size:12px; display:none; font-family:'Montserrat', sans-serif;"></div>
                     </td>
                 </tr>
             </table>
            
             <button type="submit" class="submit-btn">Відправити запит</button>
-            
+            <div id="success-message" style="color:green; font-size:14px; margin-top:15px; display:none; text-align:center; font-family:'Montserrat', sans-serif;"></div>
         </form>
     </div>
-    
     <div class="hot-tours-section">
         <div class="hot-tours-header">
             <h2>Гарячі тури</h2>
@@ -125,6 +122,9 @@
                 <div class="price-overlay">Акційна ціна 60 000₴!</div>
             </div>
         </div>
+    </div>
+    <div id="back-to-top" class="back-to-top">
+        <img src="img/arrow-up.png" alt="Нагору">
     </div>
     <footer class="footer">
         <div class="container">
